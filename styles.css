@@ -1,0 +1,115 @@
+@media all and (min-width: 960px) {
+    .Logo{
+        font-size: 28px;
+        margin-top: 17px;
+    }
+    .SignUp{
+        margin-top: 25px;
+    }
+    .LogIn{
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+ 
+body {
+    background-image: url("assests/gradient1.png");
+    background-color: #cccccc;
+    margin:0;
+   }
+   .navabar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color:rgba(0,0,0,0.4);
+
+  }
+  
+li {
+
+  }
+ li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+  }
+  /* Change the link color to #111 (black) on hover */
+
+  
+  @font-face {
+    font-family: "Lineto Circular";
+    src: url("assests/fonts/lineto-circular-black.ttf") format("truetype");
+  }
+  .Logo{
+      float:left;
+      font-weight: 100;
+      font-family: Lineto Circular;
+      
+  }
+  img{
+    max-width:100%;
+    max-height:100%;
+  }
+  .logoPic{
+      float:left;
+      margin-left:30px;
+      background-image: url("assests/IMGBIN_spotify-logo-streaming-media-music-png_wp0ccqFG.png");
+      filter: brightness(0) invert(1);;
+      width:60px;
+      height: 70px;
+      background-size: cover;
+  }
+  .SignUp{
+    float:right;
+    font-size: 16px;
+    font-family: Lineto Circular;
+    color: blue;
+  }
+  .LogIn{
+      float:right;
+      font-size: 16px;
+      font-family: Lineto Circular;
+  }
+  .MainText{
+    font-family:  Lineto Circular;
+    font-size: 75px;
+    margin-left:280px;
+    margin-top: 170px;
+    color:white;
+  }
+  .SubText{
+      color:white;
+      font-family: Lineto Circular;
+      margin-left:480px;
+      margin-top:15px;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 17px 37px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-left: 530px;
+    margin-top: 30px;
+  }
+ 
+  .button:hover {
+    background-color:#00CC08 ;/* Green */
+
+    color: white;
+  }
