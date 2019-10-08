@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br>
+
+<div id='contain'>
+  <div class="container">
+    <div class="jumbotron" id='jumbo'>
+
+        <h2>Register</h2> 
+        <hr> 
+        <form method="POST">
+            <p>  
+                <span class="input">
+                <input type="text" name="name" placeholder="Name" required>
+                <span></span> 
+                </span>
+            </p>
+            <p>  
+                <span class="input">
+                <input type="email" name="email" placeholder="E-Mail" required>
+                <span></span> 
+                </span>
+            </p>
+            <p>  
+                <span class="input">
+                <input type="text" name="username" placeholder="Username" required>
+                <span></span> 
+                </span>
+            </p>
+            <p>
+                <span class="input">
+                <input type="password" name="password" placeholder="Password" required>
+                <span></span> 
+                </span>
+            </p>
+
+            <input type="submit" class="btn" value="Register">
+        </form>
+        
+        
+        
+    </div>
+  </div>
+</div>
+
+{% endblock %}
