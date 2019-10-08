@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div id='contain'>
+        <div class="container">
+          <div class="jumbotron" id='jumbo'>
+            <h1>Welcome {{session.username}}</h1>
+            <h2>Here are the songs from your library!</h2>
+            <ol class="list-group" id="list">
+              {% for song in songs %}
+                <a class="list-group-item" style="color:steelblue"> {{song.song}} </a>
+                <form method="POST">
+                  <div class="btn-group">
+                    <!-- <a class="btn btn-primary" href="/add_song/{{ song }}"> Add to Library </a> -->
+                    <a class="btn btn-success" href="https://open.spotify.com/track/{{ song.song_id }}" target="_blank"> Listen on Spotify </a>
+                    <a class="btn btn-danger" href="https://www.youtube.com/results?search_query={{ song.song }}" target="_blank"> Listen on YouTube </a>
+                    <a class="btn btn-primary" href="delete_song/{{ song.song_id }}">Remove from Library</a>
+                  </div>
+                </form>
+              {% endfor %}
+            </ol>
+          </div>
+        </div>
+      </div>
+{% endblock %}

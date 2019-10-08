@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br>
+
+<div id='contain'>
+  <div class="container">
+    <div class="jumbotron" id='jumbo'>
+      <h2>Popular songs across Amuse!</h2>
+      <hr> 
+      <ol class="list-group" id="list">
+        {% for song,id in popularSongs|zip(songID) %}
+          <a class="list-group-item" style="color:steelblue"> {{song}} </a>
+          <form method="POST">
+            <div class="btn-group">
+              <a class="btn btn-primary" href="/add_song/{{ song }}/{{ id }}"> Add to Library </a>
+              <a class="btn btn-success" href="https://open.spotify.com/track/{{ id }}" target="_blank"> Listen on Spotify </a>
+              <a class="btn btn-danger" href="https://www.youtube.com/results?search_query={{ song }}" target="_blank"> Listen on YouTube </a>
+            </div>
+          </form>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
