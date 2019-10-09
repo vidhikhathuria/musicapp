@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, redirect, url_for, request, session, logging
-from Recommendations import popular_recommender
+#from Recommendations import popular_recommender
 from flask_mysqldb import MySQL
 from passlib.hash import sha256_crypt
 from functools import wraps
