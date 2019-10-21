@@ -21,7 +21,7 @@ mysql = MySQL(app)
 
 app.jinja_env.filters['zip'] = zip
 
-token = util.prompt_for_user_token(username='a89c3r3q6g1u7k7ndj1e0j2rf',scope='playlist-modify-public',client_id='aae5f5f86cbb4424a488700aeb5acf22',client_secret='8e41133a42a146e49674d7289b820026',redirect_uri='https://google.com/')
+token = util.prompt_for_user_token(username='a89c3r3q6g1u7k7ndj1e0j2rf',scope='playlist-modify-public',client_id='aae5f5f86cbb4424a488700aeb5acf22',client_secret='9eafccfa5b2f4c9693b01008b61a2085',redirect_uri='https://google.com/')
 spotifyObject = spotipy.Spotify(auth=token)
 
 user = spotifyObject.current_user()
